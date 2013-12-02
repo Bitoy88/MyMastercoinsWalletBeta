@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MyMastercoinsWallet.exe" version="1.0.0.4" publicKeyToken="1bb5a1d237b2efac" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MyMastercoinsWallet" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="MyMastercoinsWallet.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Crypto.dll" size="1503232">
+      <assemblyIdentity name="BouncyCastle.Crypto" version="1.7.4114.6375" publicKeyToken="0E99375E54769942" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>mHxF8s2/AfkWeYBBq30rwEDOe7E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MyMastercoinsWallet.exe" size="145920">
+      <assemblyIdentity name="MyMastercoinsWallet" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>JeuxsdJclCwerRLJMsAvxrRgioA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="456192">
+      <assemblyIdentity name="Newtonsoft.Json" version="4.5.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>jFKgouWBUSf5DIULnmf4GXXM0n0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="bin\BouncyCastle.Crypto.dll" size="1503232">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>mHxF8s2/AfkWeYBBq30rwEDOe7E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MyMastercoins.MDF" size="20971520" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>A0FU7H+KQOwbI3NIwE81S/werVs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MyMastercoins_log.ldf" size="516096" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4ncOYUZHDpMO9wSqfHA7ykfSRXg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MyMastercoinsWallet.exe.config" size="2530">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KyZyL/bEYF3LOeeYGz4E3ncnuVY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TextFile1.txt" size="3947">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6wSsdw0+mxFyq4b621fpjbWd67I=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Nivla-PC\Nivla" issuerKeyHash="fd4d975e636f557fa947c20a964538bf8d363266" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>r98rfWn7GMT/PPXK93MGTH72m2s=</DigestValue></Reference></SignedInfo><SignatureValue>ITQ4bBhYHl3HF2Pg+OXNqa+gXq1dfbxY9ryHOWcCSFJl5QskFz64us5O1WwXpzUJIVrWQswSEiaqq+C2cpJ5fbYxs8MkOFOiiOu4Ku87vLZ9h9IQNRye58hWHNwDg7v2wd2/po94ScFsClIr2Kh/7GvQrKI6MiT3dPe+wdj+7M0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>8j35ZGAC7GWfr+luVOQHzbi1AwO/MzmaZUO4vcRHZry3CfdoHxoy3mL+RVcvWsOtOWhQYTyIGS76It87kFta1lS2xHPenmYRd3K9pQe+iJYRXa8L3pV0DrHquT+nvem/2qwYuBCXZOI/rSFRBupU8uhvMJRM0GmiFcPkyQQWja8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="6b9bf67e4c0673f7caf53cffc418fb697d2bdfaf" Description="" Url=""><as:assemblyIdentity name="MyMastercoinsWallet.exe" version="1.0.0.4" publicKeyToken="1bb5a1d237b2efac" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Nivla-PC\Nivla</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>06+gi4SjTSBaMmBX92gfceGZ2Jo=</DigestValue></Reference></SignedInfo><SignatureValue>7cbGv2HFZptYEDvZhEUD8Ve7QiCUSkDTFAwU0ouA/h5eKkiBSnc/IcPISqnc67ahVz9HzFtt31t2VFHIxyYD4hF00r11KgcSfnT1gQthTmmA+2RTvsmj/raxszn51Q6PCJl4Su6yPOtkfSsYzcLcxvoBFl+XyBEoRouaO6kl9WU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>8j35ZGAC7GWfr+luVOQHzbi1AwO/MzmaZUO4vcRHZry3CfdoHxoy3mL+RVcvWsOtOWhQYTyIGS76It87kFta1lS2xHPenmYRd3K9pQe+iJYRXa8L3pV0DrHquT+nvem/2qwYuBCXZOI/rSFRBupU8uhvMJRM0GmiFcPkyQQWja8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQKmLQDg6NX75J/dhlz8txazANBgkqhkiG9w0BAQUFADAnMSUwIwYDVQQDHhwATgBpAHYAbABhAC0AUABDAFwATgBpAHYAbABhMB4XDTEzMTEyMjA0NDkyNloXDTE0MTEyMjEwNDkyNlowJzElMCMGA1UEAx4cAE4AaQB2AGwAYQAtAFAAQwBcAE4AaQB2AGwAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA8j35ZGAC7GWfr+luVOQHzbi1AwO/MzmaZUO4vcRHZry3CfdoHxoy3mL+RVcvWsOtOWhQYTyIGS76It87kFta1lS2xHPenmYRd3K9pQe+iJYRXa8L3pV0DrHquT+nvem/2qwYuBCXZOI/rSFRBupU8uhvMJRM0GmiFcPkyQQWja8CAwEAATANBgkqhkiG9w0BAQUFAAOBgQAkyP6uV/kbFVn9KwMKKjbG+O/2atq5CoI0ywvma1E0YHpt1feb3tU2gbaQpCwC1/ZZ+ROU6Nj2gksHUHe/tKAnYc/NTsI2BD56/zZqhbMKL7aNST/jCt6Y8T1S8zHq8AR5OO2r2acCNbJhQV+OzxIbDRBcLPOFA3Zx/KH9hVJWfg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
