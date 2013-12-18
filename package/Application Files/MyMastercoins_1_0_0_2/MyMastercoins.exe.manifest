@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MyMastercoins.exe" version="1.0.0.2" publicKeyToken="f18baf9ad8b57810" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MyMastercoins" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MyMastercoins.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Crypto.dll" size="1503232">
+      <assemblyIdentity name="BouncyCastle.Crypto" version="1.7.4114.6375" publicKeyToken="0E99375E54769942" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gGOsRy5NNNCGrCKwA9ICcTezZ2UvksER5gdv+Y0chYA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MyMastercoins.exe" size="159744">
+      <assemblyIdentity name="MyMastercoins" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>FBMr9xED77pNeTYj6EMg3Gs5vg6zLmSPShIajp4jYtY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="MyMastercoins.exe.config" size="3693">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zTh1n7GfpwdwsVdwGjk+/E9qqcUdOIPUZLUh+iY7qSo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MyMastercoins.MDF" size="26214400" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dhYc9+DBLUmQbvHpWMK4yBFZ0P//I8oWEfQqv7WV8Z0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MyMastercoins_log.ldf" size="13959168" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EE62CuswL1qrU11D4eX7P9vXgFZ5ai7/EAEYLfN3/YY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Newtonsoft.Json.dll" size="456192">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CffaNgmyftA5LltKWv2KniY3VOiKBDu4B0scTUYqcb0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Newtonsoft.Json.pdb" size="1256960">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3tTWMzST5thMWJhROrXI67+EhBbaZCPE5r13XHQbAuw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Newtonsoft.Json.xml" size="469230" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3sResCn5Ros5LNCxcKsdG/U1c56KuiRp9XZjDQMRea8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Nivla-PC\Nivla" issuerKeyHash="698d2cf43c6e3de8b4a46f8571434a06e57d06fa" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>GKwnJVMFz91iU57uR3Y9akLkvNWE4+u0UEh/CCq1Qpo=</DigestValue></Reference></SignedInfo><SignatureValue>k7SiBA1W8l9QhmMSfM+AfitKjHVUlvHuOLW1r2fqVyUFWlLxuMeWgIsuH1d3/m939peCe0B6gDb9jx11KwVyuFzedtef8sobKkchWVfKAj48J3LAcAJMSnFf4WsSC/nrj+Dp7oCwer6PALJaRF4c+pO3IAy+5zsxuDe4o3UlciM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wnlrD30lE8Mjdl/y1jRxpI9/TXjlJnwlVGyejpe+kbAC0EjAzKpSRz3BRxEY52JBCDCCuLiDkY1QTChlmRSHvodDQW2IUTNgDQ4LH5SGG/ISvCmIQ8T7u3UP8iMw5ok9Qo26AJvmw6P/dmd3vH5bYk80OyqpgwJLX9724jtBG48=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9a42b52a087f4850b4ebe384d5bce4426a3d7647ee9e5362ddcf05532527ac18" Description="" Url=""><as:assemblyIdentity name="MyMastercoins.exe" version="1.0.0.2" publicKeyToken="f18baf9ad8b57810" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Nivla-PC\Nivla</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>TZBNNii8FIEZXxcrzu34cQFZRjjq2UF/VLHKyQrDyrQ=</DigestValue></Reference></SignedInfo><SignatureValue>VJA+1/VbVsCzlx1+Nsvt27t287HFRpCjL+Krm6oq7J3pMFoJ0+5OT9I7T7/bZ1JgYEgTRcNsj62rFhaSke9vM2NGRhXdcz1ysx7AiI7sPumkAp8NoOQ8GXGxIQg6E2maFkGp77r/m0RNKDpy6DI4J8+gGiEXArz5wz/haui3K/o=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wnlrD30lE8Mjdl/y1jRxpI9/TXjlJnwlVGyejpe+kbAC0EjAzKpSRz3BRxEY52JBCDCCuLiDkY1QTChlmRSHvodDQW2IUTNgDQ4LH5SGG/ISvCmIQ8T7u3UP8iMw5ok9Qo26AJvmw6P/dmd3vH5bYk80OyqpgwJLX9724jtBG48=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQMlSYtuOMjIlIXaQ1HKukFjANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwATgBpAHYAbABhAC0AUABDAFwATgBpAHYAbABhMB4XDTEzMTIwNTE2MzUyM1oXDTE0MTIwNTIyMzUyM1owJzElMCMGA1UEAx4cAE4AaQB2AGwAYQAtAFAAQwBcAE4AaQB2AGwAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwnlrD30lE8Mjdl/y1jRxpI9/TXjlJnwlVGyejpe+kbAC0EjAzKpSRz3BRxEY52JBCDCCuLiDkY1QTChlmRSHvodDQW2IUTNgDQ4LH5SGG/ISvCmIQ8T7u3UP8iMw5ok9Qo26AJvmw6P/dmd3vH5bYk80OyqpgwJLX9724jtBG48CAwEAATANBgkqhkiG9w0BAQsFAAOBgQBOvnCYs123skgh/kxtzJDbk2kW7oswz1knLvAmxAMrldAbJTGbx+WVYzFJJXyn0AGhd7TfWxx+3neLVepP4VFkAMI5t/o2bEMnFtAnhC4W45TJKbw+r907BPgc5GQA5gJWbgjvA//5tth5K4ZjfoOeuzT267F66QxTxROzqRtWlg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
